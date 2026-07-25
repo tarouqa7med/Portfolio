@@ -41,7 +41,7 @@ header nav .container .ul ul {
     padding: 0;
     display: flex;
     justify-content: space-between;
-    font-family: var(--Exo-2);
+    font-family: 'Exo 2', sans-serif;
     font-size: 18px;
     align-items: center;
     list-style: none;
@@ -349,7 +349,7 @@ section.AboutMe {
 }
 .AboutMe .container .details h1 {
     margin-bottom: 35px;
-    font-family: var(--Exo-2);
+    font-family: 'Exo 2', sans-serif;
     font-weight: bolder;
     letter-spacing: 2px;
     padding-left: 20px;
