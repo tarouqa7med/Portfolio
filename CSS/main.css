@@ -9,6 +9,7 @@ header {
     background-size: cover;
     background-clip: border-box;
     position: relative;
+    box-shadow: 0 0 5px 3px var(--text-drop-shadow);
 }
 header nav {
     background-color: var(--main-color);
@@ -16,7 +17,7 @@ header nav {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100px;
+    height: 85px;
     display: flex;
     justify-content: center;
     z-index: 1;
@@ -28,7 +29,7 @@ header nav .container {
     position: relative;
 }
 header nav .container .image {
-    width: 85px;
+    width: 75px;
 }
 header nav .container .image img {
     width: 100%;
@@ -50,8 +51,8 @@ header nav .container .ul ul {
     position: relative;
 }
 header nav .container .ul ul li a {
-    color: white;
-    filter: drop-shadow(0 0 5px white);
+    color: tan;
+    filter: drop-shadow(0 0 5px tan);
     text-decoration: none;
     transition-duration: 500ms;
 }
@@ -62,7 +63,7 @@ header nav .container .ul ul li a::before {
     left: 0;
     width: 0;
     height: 2px;
-    background-color: white;
+    background-color: tan;
     filter: drop-shadow(0 0 5px var(--text-drop-shadow));
     transition-duration: 1s;
 }
@@ -78,21 +79,21 @@ header nav .container .ul ul li a::after {
     transition-duration: 1s;
 }
 header nav .container .ul ul li a:hover {
-    color: #00c1f6;
+    color: #ffeed7;
     filter: drop-shadow(0 0 5px var(--text-drop-shadow));
 }
 header nav .container .ul ul li a:hover::before,
 header nav .container .ul ul li a:hover::after {
     width: 100%;
-    background-color: #00c1f6;
+    background-color: #ffeed7;
     transition-duration: 350ms;
 }
 header nav .container .ul ul li a:active {
-    color: #009dc9;
+    color: #e7d9c5;
 }
 header nav .container .ul ul li a:active::before,
 header nav .container .ul ul li a:active::after {
-    background-color: #009dc9;
+    background-color: #e7d9c5;
 }
 header nav .container .responsive {
     padding: 0;
@@ -142,7 +143,7 @@ header .container.parent .welcome h1 {
     font-family: 'Exo 2', sans-serif;
     font-size: 75px;
     font-weight: bolder;
-    color: var(--text-color);
+    color: tan;
     filter: drop-shadow(0 0 10px var(--text-drop-shadow)) drop-shadow(0 0 20px var(--text-drop-shadow));
     animation: pulse 2s linear 500ms infinite alternate forwards;
 }
@@ -168,7 +169,7 @@ header .container.parent a {
     bottom: 50px;
     border: 3px solid var(--border-color);
     border-radius: 20px;
-    filter: drop-shadow(0 0 5px var(--text-drop-shadow)) drop-shadow(0 0 5px #00c8ff);
+    filter: drop-shadow(0 0 5px var(--text-drop-shadow)) drop-shadow(0 0 5px tan);
     overflow: hidden;
     transition-duration: 200ms;
     animation: a-motion 500ms linear 500ms infinite normal forwards;
@@ -180,19 +181,18 @@ header .container.parent a i {
     transform: translateX(-50%);
     font-size: 25px;
     color: white;
-    filter: drop-shadow(0 0 5px var(--text-drop-shadow)) drop-shadow(0 0 5px #00c8ff);
+    filter: drop-shadow(0 0 5px var(--text-drop-shadow)) drop-shadow(0 0 5px tan);
     border-radius: 50%;
     animation: arrow 1s linear 0s infinite normal forwards;
 }
 header .container.parent a:hover {
-    --border-color: red;
-    --text-drop-shadow: red;
+    --border-color: tan;
 }
 header .container.parent a:active {
     scale: 0.9;
 }
 header .container.parent a:hover i {
-    color: red;
+    color: tan;
     transition-duration: 200ms;
 }
 
@@ -202,6 +202,7 @@ section.AboutMe {
     padding-block: 50px;
     background-color: var(--main-color);
     background: linear-gradient(135deg, var(--main-color) 50%, #005871);
+    height: 110vh;
 }
 .AboutMe .container {
     height: 100%;
@@ -209,27 +210,31 @@ section.AboutMe {
     justify-content: center;
     align-items: center;
 }
+.AboutMe .container h1 {
+    color: tan;
+}
 .AboutMe .container .picture,
 .AboutMe .container .details {
+    position: relative;
     width: 50%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+}
+.AboutMe .container .picture {
     position: relative;
 }
 .AboutMe .container .picture .frame {
     position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 350px;
     height: 400px;
 }
 .AboutMe .container .picture .frame::before {
     content: "";
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-56%, -55%);
+    top: -25px;
+    left: -25px;
     border: 5px solid var(--border-color);
     border-radius: 15px;
     width: 100%;
@@ -315,6 +320,10 @@ section.AboutMe {
     justify-content: center;
     align-items: center;
     text-decoration: none;
+    transition-duration: 100ms;
+}
+.AboutMe .container .picture .frame .picture .ul ul li a:hover {
+    transform: scale(110%);
 }
 .AboutMe .container .picture .frame .picture .ul ul li a i {
     font-size: 30px;
@@ -363,11 +372,11 @@ section.AboutMe {
 }
 .AboutMe .container .details div > ul li p span {
     font-weight: bolder;
-    padding-right: 10px;
+    color: tan;
 }
 .AboutMe .container .details div > ul li p a {
     padding: 5px;
-    background-color: var(--text-color);
+    background-color: tan;
     color: var(--main-color);
     text-decoration: none;
     font-weight: bolder;
@@ -388,8 +397,9 @@ section.AboutMe {
 }
 .AboutMe .container .details div > ul ul li a {
     position: relative;
+    font-weight: bolder;
     text-decoration: none;
-    color: var(--text-color);
+    color: tan;
     transition-duration: 100ms;
 }
 .AboutMe .container .details div > ul ul li a::after {
@@ -410,20 +420,30 @@ section.AboutMe {
 .AboutMe .container .details div > ul ul li a:active {
     color: red;
 }
+.AboutMe .container .details div > ul > div a {
+    padding: 5px;
+    background-color: var(--border-color);
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+}
+.AboutMe .container .details div > ul > div a:hover {
+    background-color: var(--text-drop-shadow);
+}
+.AboutMe .container .details div > ul > div a:active {
+    color: red;
+}
 
 section.Services {
     background: linear-gradient(135deg, var(--main-color), #011212, var(--main-color));
-    height: 100vh;
+    padding-block: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .Services .container h1 {
-    margin-bottom: 50px;
-    text-align: center;
-    color: white;
-    font-family: 'Exo 2', sans-serif;
-    font-weight: bolder;
+    margin-bottom: 10px;
 }
 .Services .container .layout {
     padding-top: 20px;
@@ -435,36 +455,14 @@ section.Services {
 }
 .Services .container .layout .div {
     padding: 25px;
-    background-color: color-mix(in srgb, var(--main-color) 80%, transparent 20%);
+    background: linear-gradient(135deg, transparent, #005871a1, transparent);
     border: 2px solid color-mix(in srgb, var(--border-color) 50%, transparent 50%);
     width: calc(50% - 20px);
     border-radius: 20px;
     transition-duration: 100ms;
 }
 .Services .container .layout .div:hover {
-    background-color: #005871a1;
-    box-shadow:  7.5px 0 color-mix(in srgb, var(--text-color) 80%, transparent 20%),
-                        15px 0 color-mix(in srgb, var(--text-color) 60%, transparent 40%),
-                        22.5px 0 color-mix(in srgb, var(--text-color) 40%, transparent 60%),
-                        30px 0 color-mix(in srgb, var(--text-color) 20%, transparent 80%),
-                        -7.5px 0 color-mix(in srgb, var(--text-color) 80%, transparent 20%),
-                        -15px 0 color-mix(in srgb, var(--text-color) 60%, transparent 40%),
-                        -22.5px 0 color-mix(in srgb, var(--text-color) 40%, transparent 60%),
-                        -30px 0 color-mix(in srgb, var(--text-color) 20%, transparent 80%),
-                        0 7.5px color-mix(in srgb, var(--text-color) 80%, transparent 20%),
-                        0 15px color-mix(in srgb, var(--text-color) 60%, transparent 40%),
-                        0 22.5px color-mix(in srgb, var(--text-color) 40%, transparent 60%),
-                        0 30px color-mix(in srgb, var(--text-color) 20%, transparent 80%),
-                        0 -7.5px color-mix(in srgb, var(--text-color) 80%, transparent 20%),
-                        0 -15px color-mix(in srgb, var(--text-color) 60%, transparent 40%),
-                        0 -22.5px color-mix(in srgb, var(--text-color) 40%, transparent 60%),
-                        0 -30px color-mix(in srgb, var(--text-color) 20%, transparent 80%);
-}
-.Services .container .layout .div h2 {
-    text-align: center;
-    color: white;
-    font-family: 'PatrickHand', sans-serif;
-    font-size: 25px;
+    box-shadow: 0 0 15px tan inset;
 }
 .Services .container .layout .div .icon {
     width: 50px;
@@ -477,11 +475,22 @@ section.Services {
 }
 .Services .container .layout .div .icon i {
     font-size: 50px;
-    color: var(--text-color);
+    color: #ffd7a2;
     transition-duration: 100ms;
 }
 .Services .container .layout .div:hover .icon i {
     filter: drop-shadow(0 0 5px);
+}
+.Services .container .layout .div h2 {
+    text-align: center;
+    color: tan;
+    font-family: 'Patrick_Hand', sans-serif;
+    font-size: 35px;
+    font-weight: bolder;
+    transition-duration: 100ms;
+}
+.Services .container .layout .div:hover h2 {
+    filter: drop-shadow(0 0 5px tan);
 }
 .Services .container .layout .div p {
     color: white;
@@ -503,13 +512,6 @@ section.Skills {
     color: white;
     text-align: center;
 }
-.Skills .container h1 {
-    margin-bottom: 35px;
-    color: white;
-    font-family: 'Exo 2', sans-serif;
-    font-weight: bolder;
-    filter: drop-shadow(0 0 10px);
-}
 .Skills .container .layout {
     margin-bottom: 10px;
     display: flex;
@@ -523,15 +525,15 @@ section.Skills {
     padding: 10px;
     padding-block: 40px;
     width: calc((100% / 3) - 15px);
-    background-color: rgba(0, 255, 255, 0.035);
+    background: linear-gradient(45deg, transparent, #005871a1, transparent);
     border: 2px solid rgba(0, 255, 255, 0.05);
-    border-radius: 20px;
+    border-radius: 15px;
     box-shadow: 0 8px rgba(0, 255, 255, 0.15);
     transition-duration: 100ms;
     overflow: hidden;
 }
 .Skills .container .layout .div:hover {
-    background-color: rgba(0, 255, 255, 0.15);
+    background: linear-gradient(135deg, transparent, #005871a1, transparent);
     box-shadow: 0 8px rgba(0, 255, 255, 0.5);
 }
 .Skills .container .layout .div .circle i {
@@ -571,6 +573,9 @@ section.Skills {
     color: white;
 }
 .Skills .container .layout .div p {
+    color: #ffd7a2;
+    font-size: 18px;
+    letter-spacing: 2px;
     transition-duration: 100ms;
     transition-delay: 750ms;
 }
@@ -586,16 +591,15 @@ section.Skills {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 255, 255, 0.25);
+    background-color: rgba(0, 255, 255, 0.05);
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: center;
     align-items: center;
     transition-duration: 350ms;
-    transition-delay: 0s;
+    transition-delay: 250ms;
 }
 .Skills .container .layout .div:hover .hidden {
-    transition-delay: 200ms;
     top: 0;
 }
 .Skills .container .layout .div .hidden .percentage {
@@ -658,15 +662,7 @@ position: relative;
 section.Projects {
     background: linear-gradient(45deg, var(--main-color), #011212);
     color: white;
-    padding-block: 50px;
-}
-.Projects .container h1 {
-    margin-bottom: 35px;
-    color: white;
-    font-family: 'Exo 2', sans-serif;
-    font-weight: bolder;
-    filter: drop-shadow(0 0 10px);
-    text-align: center;
+    padding-block: 35px;
 }
 .Projects .container .layout {
     margin: auto;
@@ -677,9 +673,10 @@ section.Projects {
     gap: 30px;
 }
 .Projects .container .layout .project {
+    padding-inline: 20px;
     width: 100%;
-    background-color: rgba(0, 255, 255, 0.1);
-    border: 2px double #00ffff26;
+    background: linear-gradient(135deg, transparent, #0058715a, transparent, #0058715a, transparent, #0058715a, transparent);
+    border: 5px double tan;
     border-radius: 25px;
     overflow: auto;
 }
@@ -698,26 +695,38 @@ section.Projects {
 .Projects .container .layout .project .details {
     width: 450px;
     height: 280px;
-    padding-block: 10px;
 }
-.Projects .container .layout .project .details p {
+.Projects .container .layout .project .details h4 {
+    color: tan;
+    letter-spacing: 2px;
+    filter: drop-shadow(0 0 3px);
     text-align: center;
     font-family: 'Merienda', sans-serif;
     font-size: 35px;
     font-weight: bolder;
 }
+.Projects .container .layout .project .details p {
+    font-family: 'Patrick_Hand', sans-serif;
+    padding: 5px;
+}
 .Projects .container .layout .project .details a {
     margin: auto;
     padding: 8px 15px;
-    width: fit-content;
+    width: 75%;
     display: block;
-    background-color: var(--main-color);
-    color: white;
+    background: linear-gradient(45deg, #16a2c9a1, transparent, #16a2c9a1);
+    color: #ffd7a2;
     border: 1px solid var(--border-color);
     border-radius: 8px;
+    font-weight: bolder;
+    text-align: center;
     text-decoration: none;
 }
+.Projects .container .layout .project .details a:hover {
+    background: linear-gradient(135deg, transparent, #16a2c9a1, transparent);
+}
 .Projects .container .layout .project .image {
+    position: relative;
     width: 50%;
     height: 280px;
     border: 2px solid #005871;
@@ -730,13 +739,268 @@ section.Projects {
     transition-duration: 200ms;
 }
 .Projects .container .layout .project .image:hover img {
-    scale: 1.05;
+    transform: scale(105%);
+    filter: brightness(25%);
+}
+.Projects .container .layout .project .image a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 50px;
+    background-color: #ffd7a2;
+    color: #6e522d;
+    border: 5px dotted #6e522d;
+    border-radius: 10px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 350ms;
+    transition-delay: 0s;
+    opacity: 0;
+}
+.Projects .container .layout .project .image:hover a {
+    transition-delay: 100ms;
+    opacity: 1;
 }
 
 
 
-
 section.ContactMe {
-    background-color: #444;
-    height: 100vh;
+    background-color: black;
+    border-bottom: 5px solid tan;
+}
+.ContactMe .container {
+    padding-block: 20px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, black, rgba(210, 180, 140, 0.323));
+    max-width: 100%;
+    height: 100%;
+}
+.ContactMe .container h1 {
+    color: tan;
+    margin-bottom: 15px;
+}
+.ContactMe .container .layout {
+margin: auto;
+    padding: 5px;
+    width: 90%;
+    background-color: #C5A871;
+    border-radius: 10px;
+    display: flex;
+    gap: 5px;
+}
+.ContactMe .container .layout .contact-info,
+    .ContactMe .container .layout .form {
+    padding: 15px;
+    background-color: black;
+    color: tan;
+    width: calc(50% - 2.5px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.ContactMe .container .layout .contact-info {
+    border-radius: 8px 0 0 8px;
+    padding-left: 35px !important;
+}
+.ContactMe .container .layout .contact-info > div p {
+    margin-bottom: 20px;
+    font-family: 'Patrick_Hand', sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+    filter: drop-shadow(0 0 3px);
+}
+.ContactMe .container .layout .contact-info > div .ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 20px;
+}
+.ContactMe .container .layout .contact-info > div .ul li {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.ContactMe .container .layout .contact-info .div1 .ul li.width100 {
+    width: 100%;
+}
+.ContactMe .container .layout .contact-info .div1 .ul li.width40 {
+    width: calc(40% - 10px);
+}
+.ContactMe .container .layout .contact-info > div .ul li a {
+    color: tan;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 250ms;
+}
+.ContactMe .container .layout .contact-info > div .ul li:hover a {
+    color: white;
+}
+.ContactMe .container .layout .contact-info > div .ul li a i {
+    margin-right: 5px;
+    font-size: 24px;
+}
+.ContactMe .container .layout .form {
+    border-radius: 0 8px 8px 0;
+}
+
+.ContactMe .container .layout .form form {
+    padding: 5px 25px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.ContactMe .container .layout .form form label {
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    color: rgb(255, 216, 164);
+}
+.ContactMe .container .layout .form form input,
+.ContactMe .container .layout .form form textarea {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 8px;
+    width: 100%;
+    height: 30px;
+    background: linear-gradient(45deg, transparent, rgba(210, 180, 140, 0.323), transparent);
+    color: white;
+    border: 1px solid tan;
+    border-radius: 10px;
+    transition-duration: 200ms;
+    outline-color: tan;
+}
+.ContactMe .container .layout .form form textarea {
+    height: 85px !important;
+    resize: none;
+}
+.ContactMe .container .layout .form form input:focus,
+.ContactMe .container .layout .form form textarea:focus {
+    background: black;
+    outline: 2px solid tan;
+    box-shadow: 0 0 0 6px #d2b48c80;
+}
+.ContactMe .container .layout .form form button {
+    margin: auto;
+    margin-top: 10px;
+    padding: 8px 10px;
+    width: 150px;
+    background: linear-gradient(45deg, transparent, tan, transparent);
+    color: black;
+    border: 1px solid tan;
+    border-radius: 10px;
+    font-weight: bolder;
+    transition-duration: 200ms;
+}
+.ContactMe .container .layout .form form button:hover {
+    background: linear-gradient(45deg, tan, transparent, tan);
+    color: tan;
+}
+.ContactMe .container .layout .form form button:active {
+    transform: scale(90%);
+}
+
+footer {
+    height: 150px;
+    background-color: color-mix(in srgb, tan 5%, black 100%);
+}
+footer .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+footer .container .div1,
+footer .container .div2 {
+    height: 100%;
+}
+footer .container .div1 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+}
+footer .container .div1 .image {
+    width: 75px;
+}
+footer .container .div1 .image img {
+    width: 100%;
+    border: 3px solid tan;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 5px tan);
+}
+footer .container .div1 hr {
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(tan 50%, transparent);
+}
+footer .container .div1 .ul ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+footer .container .div1 .ul ul li a {
+    font-family: 'Exo 2', sans-serif;
+    text-decoration: none;
+    color: white;
+    filter: drop-shadow(0 0 5px);
+    transition-duration: 100ms;
+}
+footer .container .div1 .ul ul li a:hover {
+    color: tan;
+}
+footer .container .div1 .ul p {
+    font-family: 'Exo 2', sans-serif;
+    color: tan;
+    font-size: 25px;
+    font-weight: bolder;
+    filter: drop-shadow(0 0 5px tan);
+}
+footer .container .div2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer .container .div2 ul {
+    padding: 0;
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+footer .container .div2 ul li a i {
+    width: fit-content;
+    font-size: 35px;
+    color: tan;
+    transition-duration: 100ms;
+    filter: drop-shadow(0 0 2px);
+}
+footer .container .div2 ul li a i:hover {
+    color: #af926b;
+}
+footer .container .div2 > a {
+    font-family: 'Exo 2', sans-serif;
+    color: tan;
+    filter: drop-shadow(0 0 2px);
+    font-size: 20px;
+    font-weight: bolder;
+    text-decoration: none;
+}
+footer .container .div2 > a:hover {
+    color: #af926b;
 }

@@ -7,13 +7,12 @@
 :root {
     --main-color: #00252f;
     --text-color: #00c1f6;
-    --border-color: #00c1f6;
-    --text-drop-shadow: #0095be;
-    --d: 'Nunito-Bold', sans-serif;
+    --border-color: tan;
+    --text-drop-shadow: rgb(184, 153, 113);
 }
 html {
     background-color: var(--main-color);
-    animation: scrollbar-color 3s linear 0s 1 normal forwards;
+    animation: scrollbar-color 5s linear 0s 1 normal forwards;
 }
 .parent {
     overflow: auto;
@@ -23,4 +22,15 @@ html {
 }
 .left {
     float: left;
+}
+section {
+    scroll-margin-top: 85px;
+}
+section .container > h1 {
+    margin-bottom: 35px;
+    color: tan;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: bolder;
+    filter: drop-shadow(0 0 10px);
+    text-align: center;
 }

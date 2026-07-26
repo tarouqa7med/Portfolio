@@ -21,91 +21,91 @@
 }
 @keyframes percentage {
     0% {
-        background: conic-gradient(#ff006f 0% 0%, #ffffff60 0% 100%);
+        background: conic-gradient(tan 0% 0%, #ffffff60 0% 100%);
     } 7% {
-        background: conic-gradient(#ff006f 0% 7%, #ffffff60 7% 100%);
+        background: conic-gradient(tan 0% 7%, #ffffff60 7% 100%);
     } 15% {
-        background: conic-gradient(#ff006f 0% 15%, #ffffff60 15% 100%);
+        background: conic-gradient(tan 0% 15%, #ffffff60 15% 100%);
     } 22% {
-        background: conic-gradient(#ff006f 0% 22%, #ffffff60 22% 100%);
+        background: conic-gradient(tan 0% 22%, #ffffff60 22% 100%);
     } 30% {
-        background: conic-gradient(#ff006f 0% 30%, #ffffff60 30% 100%);
+        background: conic-gradient(tan 0% 30%, #ffffff60 30% 100%);
     } 42% {
-        background: conic-gradient(#ff006f 0% 42%, #ffffff60 42% 100%);
+        background: conic-gradient(tan 0% 42%, #ffffff60 42% 100%);
     } 50% {
-        background: conic-gradient(#ff006f 0% 50%, #ffffff60 50% 100%);
+        background: conic-gradient(tan 0% 50%, #ffffff60 50% 100%);
     } 58% {
-        background: conic-gradient(#ff006f 0% 58%, #ffffff60 58% 100%);
+        background: conic-gradient(tan 0% 58%, #ffffff60 58% 100%);
     } 66% {
-        background: conic-gradient(#ff006f 0% 66%, #ffffff60 66% 100%);
+        background: conic-gradient(tan 0% 66%, #ffffff60 66% 100%);
     } 73% {
-        background: conic-gradient(#ff006f 0% 73%, #ffffff60 73% 100%);
+        background: conic-gradient(tan 0% 73%, #ffffff60 73% 100%);
     } 81% {
-        background: conic-gradient(#ff006f 0% 81%, #ffffff60 81% 100%);
+        background: conic-gradient(tan 0% 81%, #ffffff60 81% 100%);
     } 90% {
-        background: conic-gradient(#ff006f 0% 90%, #ffffff60 90% 100%);
+        background: conic-gradient(tan 0% 90%, #ffffff60 90% 100%);
     } 99% {
-        background: conic-gradient(#ff006f 0% 99%, #ffffff60 99% 100%);
+        background: conic-gradient(tan 0% 99%, #ffffff60 99% 100%);
     } 100% {
-        background: conic-gradient(#ff006f 0% 100%, #ffffff60 100% 100%);
+        background: conic-gradient(tan 0% 100%, #ffffff60 100% 100%);
     }
 }
 @keyframes number {
     0% {
         content: "0";
-        background: conic-gradient(#ff006f 0% 0%, #ffffff60 0% 100%);
+        background: conic-gradient(#6e522d 0% 0%, #ffffff60 0% 100%);
         
     } 7% {
         content: "7";
-        background: conic-gradient(#ff006f 0% 7%, #ffffff60 7% 100%);
+        background: conic-gradient(#6e522d 0% 7%, #ffffff60 7% 100%);
         
     } 15% {
         content: "15";
-        background: conic-gradient(#ff006f 0% 15%, #ffffff60 15% 100%);
+        background: conic-gradient(#6e522d 0% 15%, #ffffff60 15% 100%);
         
     } 22% {
         content: "22";
-        background: conic-gradient(#ff006f 0% 22%, #ffffff60 22% 100%);
+        background: conic-gradient(#6e522d 0% 22%, #ffffff60 22% 100%);
         
     } 30% {
         content: "30";
-        background: conic-gradient(#ff006f 0% 30%, #ffffff60 30% 100%);
+        background: conic-gradient(#6e522d 0% 30%, #ffffff60 30% 100%);
         
     } 42% {
         content: "42";
-        background: conic-gradient(#ff006f 0% 42%, #ffffff60 42% 100%);
+        background: conic-gradient(#6e522d 0% 42%, #ffffff60 42% 100%);
         
     } 50% {
         content: "50";
-        background: conic-gradient(#ff006f 0% 50%, #ffffff60 50% 100%);
+        background: conic-gradient(#6e522d 0% 50%, #ffffff60 50% 100%);
         
     } 58% {
         content: "58";
-        background: conic-gradient(#ff006f 0% 58%, #ffffff60 58% 100%);
+        background: conic-gradient(#6e522d 0% 58%, #ffffff60 58% 100%);
         
     } 66% {
         content: "66";
-        background: conic-gradient(#ff006f 0% 66%, #ffffff60 66% 100%);
+        background: conic-gradient(#6e522d 0% 66%, #ffffff60 66% 100%);
         
     } 73% {
         content: "73";
-        background: conic-gradient(#ff006f 0% 73%, #ffffff60 73% 100%);
+        background: conic-gradient(#6e522d 0% 73%, #ffffff60 73% 100%);
         
     } 81% {
         content: "81";
-        background: conic-gradient(#ff006f 0% 81%, #ffffff60 81% 100%);
+        background: conic-gradient(#6e522d 0% 81%, #ffffff60 81% 100%);
         
     } 90% {
         content: "90";
-        background: conic-gradient(#ff006f 0% 90%, #ffffff60 90% 100%);
+        background: conic-gradient(#6e522d 0% 90%, #ffffff60 90% 100%);
         
     } 99% {
         content: "99";
-        background: conic-gradient(#ff006f 0% 99%, #ffffff60 99% 100%);
+        background: conic-gradient(#6e522d 0% 99%, #ffffff60 99% 100%);
         
     } 100% {
         content: "100";
-        background: conic-gradient(#ff006f 0% 100%, #ffffff60 100% 100%);
+        background: conic-gradient(#6e522d 0% 100%, #ffffff60 100% 100%);
         
     }
 }
