@@ -23,6 +23,9 @@
     header nav .container .responsive {
         display: flex;
     }
+    header .container.parent a {
+        bottom: 125px;
+    }
     .AboutMe .container {
         padding: 0;
         flex-direction: column;
