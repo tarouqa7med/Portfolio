@@ -118,6 +118,9 @@ header nav .container .responsive span {
     background-color: var(--fifth-color);
     display: block;
 }
+header nav .container #responsive {
+    opacity: 0;
+}
 header .container.parent {
     width: 100%;
     max-width: 100%;
@@ -564,32 +567,32 @@ section.Skills {
     color: orange;
 }
 .Skills .container .layout .div:nth-child(2) .circle i {
-    color: rgb(149, 0, 255);
+    color: #9500ff;
 }
 .Skills .container .layout .div:nth-child(3) .circle i {
     color: yellow;
 }
-.Skills .container .layout .div:nth-child(4) .circle i {
+/* .Skills .container .layout .div:nth-child(4) .circle i {
     color: skyblue;
 }
 .Skills .container .layout .div:nth-child(5) .circle i {
     color: white;
-}
-.Skills .container .layout .div:nth-child(6) .circle i {
+} */
+.Skills .container .layout .div:nth-child(4) .circle i {
     color: #454545;
 }
-.Skills .container .layout .div:nth-child(7) .circle i {
+/* .Skills .container .layout .div:nth-child(7) .circle i {
     color: #454545;
 }
 .Skills .container .layout .div:nth-child(8) .circle i {
     color: aqua;
-}
-.Skills .container .layout .div:nth-child(9) .circle i {
+} */
+.Skills .container .layout .div:nth-child(5) .circle i {
     color: #be00be;
 }
-.Skills .container .layout .div:nth-child(10) .circle i {
+/* .Skills .container .layout .div:nth-child(10) .circle i {
     color: white;
-}
+} */
 .Skills .container .layout .div p {
     color: var(--sixth-color);
     font-size: 18px;
@@ -629,36 +632,36 @@ section.Skills {
     justify-content: center;
     align-items: center;
 }
-.Skills .container .layout .div:nth-child(1) .hidden .percentage { /* HTML */
+.Skills .container .layout .div:nth-child(1) .hidden .percentage {
     background: conic-gradient(#ff006f 0% 100%, #ffffff60 100% 100%);
 }
-.Skills .container .layout .div:nth-child(2) .hidden .percentage { /* CSS */
+.Skills .container .layout .div:nth-child(2) .hidden .percentage {
     background: conic-gradient(#ff006f 0% 90%, #ffffff60 90% 100%);
 }
-.Skills .container .layout .div:nth-child(3) .hidden .percentage { /* JavaScript */
+.Skills .container .layout .div:nth-child(3) .hidden .percentage {
     background: conic-gradient(#ff006f 0% 20%, #ffffff60 20% 100%);
 }
-.Skills .container .layout .div:nth-child(4) .hidden .percentage { /* PHP */
-    background: conic-gradient(#ff006f 0% 0%, #ffffff60 0% 100%);
-}
-.Skills .container .layout .div:nth-child(5) .hidden .percentage { /* Angular */
-    background: conic-gradient(#ff006f 0% 0%, #ffffff60 0% 100%);
-}
-.Skills .container .layout .div:nth-child(6) .hidden .percentage { /* Github */
+.Skills .container .layout .div:nth-child(4) .hidden .percentage {
     background: conic-gradient(#ff006f 0% 65%, #ffffff60 65% 100%);
 }
-.Skills .container .layout .div:nth-child(7) .hidden .percentage { /* Git */
-    background: conic-gradient(#ff006f 0% 0%, #ffffff60 0% 100%);
-}
-.Skills .container .layout .div:nth-child(8) .hidden .percentage { /* React */
-    background: conic-gradient(#ff006f 0% 0%, #ffffff60 0% 100%);
-}
-.Skills .container .layout .div:nth-child(9) .hidden .percentage { /* BootStrap */
+.Skills .container .layout .div:nth-child(5) .hidden .percentage {
     background: conic-gradient(#ff006f 0% 25%, #ffffff60 25% 100%);
 }
-.Skills .container .layout .div:nth-child(10) .hidden .percentage { /* Node.js */
+/* .Skills .container .layout .div:nth-child(6) .hidden .percentage {
+    background: conic-gradient(#ff006f 0% 65%, #ffffff60 65% 100%);
+}
+.Skills .container .layout .div:nth-child(7) .hidden .percentage {
     background: conic-gradient(#ff006f 0% 0%, #ffffff60 0% 100%);
 }
+.Skills .container .layout .div:nth-child(8) .hidden .percentage {
+    background: conic-gradient(#ff006f 0% 0%, #ffffff60 0% 100%);
+}
+.Skills .container .layout .div:nth-child(9) .hidden .percentage {
+    background: conic-gradient(#ff006f 0% 25%, #ffffff60 25% 100%);
+}
+.Skills .container .layout .div:nth-child(10) .hidden .percentage {
+    background: conic-gradient(#ff006f 0% 0%, #ffffff60 0% 100%);
+} */
 .Skills .container .layout .div .hidden .percentage .solid-circle {
 width: 80%;
 height: 80%;

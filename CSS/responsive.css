@@ -195,11 +195,14 @@
     .loading .container  .job {
         font-size: 35px;
     }
-    header nav .container .ul {
-    display: none;
-    }
     header nav .container .responsive {
         display: flex;
+    }
+    header nav .container #responsive:checked + .ul {
+        display: flex;
+    }
+    header nav .container .ul {
+    display: none;
     }
     header .container.parent .welcome h1 {
         font-size: 55px;
