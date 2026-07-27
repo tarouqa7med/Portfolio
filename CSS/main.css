@@ -701,13 +701,8 @@ section.Projects {
     align-items: center;
     overflow: auto;
 }
-.Projects .container .layout .project .details,
-.Projects .container .layout .project .image {
-    margin: 20px;
-}
 .Projects .container .layout .project .details {
     width: 400px;
-    height: 280px;
 }
 .Projects .container .layout .project .image {
     min-width: 600px;

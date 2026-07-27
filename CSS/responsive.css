@@ -23,8 +23,11 @@
     header nav .container .responsive {
         display: flex;
     }
+    header .container.parent {
+        position: relative;
+    }
     header .container.parent a {
-        bottom: 125px;
+        bottom: 125px !important;
     }
     .AboutMe .container {
         padding: 0;
@@ -72,11 +75,9 @@
         transform: scale(1);
     }
     .Projects .container .layout .project .image {
-        margin: auto;
-        width: 325px;
-        aspect-ratio: 2/1;
-        padding: 20px;
-        background-color: red;
+        max-width: 300px;
+        width: 90%;
+        height: 180px;
     }
     .ContactMe .container .layout .contact-info > div .ul li a {
         font-size: 12px !important;
@@ -124,6 +125,9 @@
     header .container.parent .welcome h1 {
         font-size: 45px;
     }
+    header .container.parent a {
+        bottom: 125px !important;
+    }
     .AboutMe .container {
         padding: 0;
         flex-direction: column;
@@ -154,15 +158,20 @@
         max-width: 90%;
     }
     .Projects .container .layout .project {
-        margin: -50px;
         padding-block: 20px;
-        height: max-content;
-        transform: scale(0.85);
     }
     .Projects .container .layout .project .image {
-        min-width: 87%;
+        margin: 0;
+        min-width: 95%;
         height: 20%;
         object-fit: cover;
+    }
+    .Projects .container .layout .project .details h4 {
+        font-size: 30px !important;
+    }
+    .Projects .container .layout .project:nth-child(5) .details h4 {
+        font-size: 25px !important;
+        padding-block: 10px;
     }
     footer {
         padding-block: 30px;
@@ -230,7 +239,9 @@
         transform: scale(1);
     }
     .Projects .container .layout .project .image {
-        aspect-ratio: 2/1;
+        min-width: 500px;
+        width: 90%;
+        aspect-ratio: unset;
     }
     footer {
         padding-block: 30px;
@@ -347,15 +358,14 @@
         padding: 20px;
         padding-top: 30px;
     }
-    .Projects .container .layout .project {
-        margin-bottom: 35px;
-        transform: scale(1);
-    }
     .Projects .container .layout .project .image {
-        aspect-ratio: 2/1;
+        aspect-ratio: 4.5/2.5;
     }
     .Projects .container .layout .project .details h4 {
         font-size: 26px;
+    }
+    .Projects .container .layout .project .details a {
+        font-size: 22px;
     }
 }
 @media screen and (max-width: 550px) {
@@ -394,6 +404,11 @@
     }
     .ContactMe .container .layout .form form textarea {
         height: 150px;
+    }
+}
+@media screen and (max-width: 1150px) {
+    .Projects .container .layout .project .image {
+        margin-bottom: 25px;
     }
 }
 @media screen and (max-width: 1200px) {
