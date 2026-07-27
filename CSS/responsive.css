@@ -92,6 +92,9 @@
 @media screen and (min-width: 371px) and (max-width: 575.98px) {
     /* 450px */
 
+    header .container.parent a {
+        bottom: 125px;
+    }
     .loading .container .name {
         letter-spacing: 0;
         font-size: 36px !important;
