@@ -9,10 +9,10 @@ header {
     background-size: cover;
     background-clip: border-box;
     position: relative;
-    box-shadow: 0 0 5px 3px var(--text-drop-shadow);
+    box-shadow: 0 0 5px 3px var(--sixth-color);
 }
 header nav {
-    background-color: var(--text2-drop-shadow);
+    background-color: var(--second-color);
     position: fixed;
     top: 0;
     left: 0;
@@ -33,7 +33,7 @@ header nav .container .image {
 }
 header nav .container .image img {
     width: 100%;
-    border: 3px solid var(--border-color);
+    border: 3px solid var(--fourth-color);
     border-radius: 50%;
     cursor: pointer;
 }
@@ -51,8 +51,9 @@ header nav .container .ul ul {
     position: relative;
 }
 header nav .container .ul ul li a {
-    color: var(--main2-color);
-    filter: drop-shadow(0 0 0 var(--main2-color));
+    color: var(--fifth-color);
+    filter: drop-shadow(0 0 0);
+    font-weight: bolder;
     text-decoration: none;
     transition-duration: 500ms;
 }
@@ -63,8 +64,8 @@ header nav .container .ul ul li a::before {
     left: 0;
     width: 0;
     height: 2px;
-    background-color: tan;
-    filter: drop-shadow(0 0 5px var(--text-drop-shadow));
+    background-color: var(--fourth-color);
+    filter: drop-shadow(0 0 5px var(--main-color));
     transition-duration: 1s;
 }
 header nav .container .ul ul li a::after {
@@ -74,26 +75,26 @@ header nav .container .ul ul li a::after {
     right: 0;
     width: 0;
     height: 2px;
-    background-color: tan;
-    filter: drop-shadow(0 0 5px var(--text-drop-shadow));
+    background-color: var(--fourth-color);
+    filter: drop-shadow(0 0 5px var(--main-color));
     transition-duration: 1s;
 }
 header nav .container .ul ul li a:hover {
-    color: #ffeed7;
-    filter: drop-shadow(0 0 5px var(--text-drop-shadow));
+    color: var(--sixth-color);
+    filter: drop-shadow(0 0 2px);
 }
 header nav .container .ul ul li a:hover::before,
 header nav .container .ul ul li a:hover::after {
     width: 100%;
-    background-color: #ffeed7;
+    background-color: var(--sixth-color);
     transition-duration: 350ms;
 }
 header nav .container .ul ul li a:active {
-    color: #e7d9c5;
+    color: var(--fourth-color);
 }
 header nav .container .ul ul li a:active::before,
 header nav .container .ul ul li a:active::after {
-    background-color: #e7d9c5;
+    background-color: var(--fourth-color);
 }
 header nav .container .responsive {
     padding: 0;
@@ -104,7 +105,7 @@ header nav .container .responsive {
     width: 50px;
     height: 40px;
     background-color: transparent;
-    border: 1.5px solid white;
+    border: 1.5px solid var(--fifth-color);
     border-radius: 8px;
     display: none;
     flex-direction: column;
@@ -114,7 +115,7 @@ header nav .container .responsive {
 header nav .container .responsive span {
     width: 80%;
     height: 2px;
-    background-color: white;
+    background-color: var(--fifth-color);
     display: block;
 }
 header .container.parent {
@@ -127,7 +128,6 @@ header .container.parent {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
 }
 header .container.parent .welcome {
     text-align: center;
@@ -135,7 +135,8 @@ header .container.parent .welcome {
 header .container.parent .welcome p {
     margin: 0;
     font-size: 20px;
-    filter: drop-shadow(0 0 10px white) drop-shadow(0 0 1px white);
+    color: var(--second-color);
+    filter: drop-shadow(0 0 10px tan) drop-shadow(0 0 1px tan);
 }
 header .container.parent .welcome h1 {
     margin-block: 20px;
@@ -143,13 +144,16 @@ header .container.parent .welcome h1 {
     font-size: 75px;
     font-weight: bolder;
     color: tan;
-    filter: drop-shadow(0 0 10px var(--text-drop-shadow)) drop-shadow(0 0 20px var(--text-drop-shadow));
+    filter: drop-shadow(0 0 10px var(--sixth-color)) drop-shadow(0 0 20px var(--main-color));
     animation: pulse 2s linear 500ms infinite alternate forwards;
 }
 header .container.parent .welcome .job-name {
     position: relative;
     font-family: 'Playball', sans-serif;
-    filter: drop-shadow(0 0 10px var(--text-drop-shadow)) drop-shadow(0 0 20px white);
+    font-weight: bolder;
+    letter-spacing: 3px;
+    color: var(--second-color);
+    filter: drop-shadow(0 0 10px var(--sixth-color)) drop-shadow(0 0 20px var(--main-color));
 }
 header .container.parent .welcome .job-name::after {
     content: "";
@@ -166,12 +170,12 @@ header .container.parent a {
     height: 75px;
     position: absolute;
     bottom: 50px;
-    border: 3px solid var(--border-color);
+    border: 3px solid var(--main-color);
     border-radius: 20px;
-    filter: drop-shadow(0 0 5px var(--text-drop-shadow)) drop-shadow(0 0 5px tan);
+    filter: drop-shadow(0 0 5px var(--fourth-color)) drop-shadow(0 0 5px var(--main-color));
     overflow: hidden;
     transition-duration: 200ms;
-    animation: a-motion 500ms linear 500ms infinite normal forwards;
+    animation: a-motion 2s linear 500ms infinite normal forwards;
 }
 header .container.parent a i {
     position: absolute;
@@ -180,18 +184,15 @@ header .container.parent a i {
     transform: translateX(-50%);
     font-size: 25px;
     color: white;
-    filter: drop-shadow(0 0 5px var(--text-drop-shadow)) drop-shadow(0 0 5px tan);
+    filter: drop-shadow(0 0 5px var(--fourth-color)) drop-shadow(0 0 5px var(--main-color));
     border-radius: 50%;
-    animation: arrow 1s linear 0s infinite normal forwards;
-}
-header .container.parent a:hover {
-    --border-color: tan;
+    animation: arrow 2s linear 0s infinite normal forwards;
 }
 header .container.parent a:active {
     scale: 0.9;
 }
 header .container.parent a:hover i {
-    color: tan;
+    color: var(--sixth-color);
     transition-duration: 200ms;
 }
 
@@ -199,8 +200,7 @@ header .container.parent a:hover i {
 
 section.AboutMe {
     padding-bottom: 30px;
-    /* background-color: var(--main-color); */
-    background: linear-gradient(135deg, var(--main-color) 50%, #005871);
+    background: linear-gradient(135deg, var(--main-color) 50%, var(--second-color));
 }
 .AboutMe .container {
     padding: 0;
@@ -234,7 +234,7 @@ section.AboutMe {
     position: absolute;
     top: -25px;
     left: -25px;
-    border: 5px solid var(--border-color);
+    border: 5px solid var(--fifth-color);
     border-radius: 15px;
     width: 100%;
     height: 100%;
@@ -246,9 +246,9 @@ section.AboutMe {
     height: 100%;
     background-image: url("./../attachments/wallpapers/myProfilePicture_Full.png");
     background-position: center top;
-    box-shadow: 0 0 5px 3px var(--text-drop-shadow);
     background-repeat: no-repeat;
     background-size: cover;
+    border: 2px solid var(--fourth-color);
     border-radius: 10px;
     overflow: hidden;
 }
@@ -258,15 +258,16 @@ section.AboutMe {
     background-color: #00000080;
     width: 100%;
     height: 100%;
-    border-radius: 10px;
+    border-radius: 8px;
     transition-duration: 1s;
     backdrop-filter: blur(20px);
-    box-shadow: 0 0 10px 3px var(--text-drop-shadow) inset;
+    box-shadow: 0 0 10px 3px var(--fourth-color) inset;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.AboutMe .container .picture .frame .picture:hover .ul {
+.AboutMe .container .picture .frame .picture:hover .ul,
+.AboutMe .container .picture .frame .picture:active .ul {
     top: 0;
 }
 .AboutMe .container .picture .frame .picture .ul ul {
@@ -282,7 +283,8 @@ section.AboutMe {
     transition-duration: 0s;
     transition-delay: 0s;
 }
-.AboutMe .container .picture .frame .picture .ul:hover ul {
+.AboutMe .container .picture .frame .picture .ul:hover ul,
+.AboutMe .container .picture .frame .picture .ul:active ul {
     opacity: 1;
     transition-duration: 1s;
     transition-delay: 1s;
@@ -291,8 +293,8 @@ section.AboutMe {
     position: relative;
     width: 50px;
     height: 50px;
-    background-color: white;
-    border: 3px solid var(--border-color);
+    background-color: var(--main-color);
+    border: 3px solid var(--fourth-color);
     border-radius: 50%;
     opacity: 0;
     transition-duration: 0s;
@@ -305,12 +307,13 @@ section.AboutMe {
 .AboutMe .container .picture .frame .picture .ul ul li:nth-child(even) {
     top: 200px;
 }
-.AboutMe .container .picture .frame .picture .ul:hover ul li {
+.AboutMe .container .picture .frame .picture .ul:hover ul li,
+.AboutMe .container .picture .frame .picture .ul:active ul li {
     top: 0;
     opacity: 1;
     transition-duration: 1.5s;
     transition-delay: 1s;
-    filter: drop-shadow(0 0 3px white);
+    filter: drop-shadow(0 0 3px);
 }
 .AboutMe .container .picture .frame .picture .ul ul li a {
     width: 100%;
@@ -321,8 +324,9 @@ section.AboutMe {
     text-decoration: none;
     transition-duration: 100ms;
 }
-.AboutMe .container .picture .frame .picture .ul ul li a:hover {
-    transform: scale(110%);
+.AboutMe .container .picture .frame .picture .ul ul li a:hover,
+.AboutMe .container .picture .frame .picture .ul ul li a:active {
+    transform: scale(115%);
 }
 .AboutMe .container .picture .frame .picture .ul ul li a i {
     font-size: 30px;
@@ -353,7 +357,8 @@ section.AboutMe {
 }
 .AboutMe .container .details {
     display: flex;
-    color: white;
+    color: var(--fifth-color);
+    font-weight: bold;
 }
 .AboutMe .container .details h1 {
     margin-bottom: 35px;
@@ -361,8 +366,8 @@ section.AboutMe {
     font-weight: bolder;
     letter-spacing: 2px;
     padding-left: 20px;
-    color: tan;
-    border-left: 5px solid var(--border-color);
+    color: var(--sixth-color);
+    border-left: 5px solid var(--fifth-color);
 }
 .AboutMe .container .details div > ul {
     line-height: 20px;
@@ -372,21 +377,23 @@ section.AboutMe {
 }
 .AboutMe .container .details div > ul li p span {
     font-weight: bolder;
-    color: tan;
+    font-size: 20px;
+    color: var(--sixth-color);
 }
 .AboutMe .container .details div > ul li p a {
     padding: 8px;
-    background-color: tan;
+    background-color: var(--fourth-color);
     color: var(--main-color);
     text-decoration: none;
     font-weight: bolder;
     border-radius: 10px;
+    transition-duration: 100ms;
 }
 .AboutMe .container .details div > ul li p a:hover {
-    background-color: var(--text-drop-shadow);
+    background-color: var(--third-color);
 }
 .AboutMe .container .details div > ul li p a:active {
-    color: red;
+    color: var(--sixth-color);
 }
 .AboutMe .container .details div > ul ul {
     margin-bottom: 30px;
@@ -399,7 +406,7 @@ section.AboutMe {
     position: relative;
     font-weight: bolder;
     text-decoration: none;
-    color: tan;
+    color: #ff0073;
     transition-duration: 100ms;
 }
 .AboutMe .container .details div > ul ul li a::after {
@@ -409,7 +416,7 @@ section.AboutMe {
     left: 0;
     width: 100%;
     height: 3px;
-    background-color: var(--border-color);
+    background-color: #ff0073;
     transition-duration: 100ms;
     opacity: 0;
 }
@@ -418,7 +425,7 @@ section.AboutMe {
     opacity: 1;
 }
 .AboutMe .container .details div > ul ul li a:active {
-    color: red;
+    color: var(--sixth-color);
 }
 .AboutMe .container .details div > ul > div {
     display: flex;
@@ -426,22 +433,23 @@ section.AboutMe {
     gap: 0;
 }
 .AboutMe .container .details div > ul > div a {
-    padding: 8px;
-    background-color: var(--border-color);
-    color: black;
+    padding: 8px 12px;
+    background-color: var(--fourth-color);
+    color: var(--main-color);
     text-decoration: none;
     font-weight: bold;
     border-radius: 8px;
+    transition-duration: 100ms;
 }
 .AboutMe .container .details div > ul > div a:hover {
-    background-color: var(--text-drop-shadow);
+    background-color: var(--third-color);
 }
 .AboutMe .container .details div > ul > div a:active {
-    color: red;
+    color: var(--sixth-color);
 }
 
 section.Services {
-    background: linear-gradient(135deg, var(--main-color), #011212, var(--main-color));
+    background: linear-gradient(45deg, var(--main-color), #f4dfc4, var(--main-color));
     padding-block: 35px;
     display: flex;
     justify-content: center;
@@ -460,14 +468,23 @@ section.Services {
 }
 .Services .container .layout .div {
     padding: 25px;
-    background: linear-gradient(135deg, transparent, #005871a1, transparent);
-    border: 2px solid color-mix(in srgb, var(--border-color) 50%, transparent 50%);
+    background: linear-gradient(135deg, transparent, var(--third-color), transparent);
+    border: 2px solid color-mix(in srgb, var(--fourth-color) 50%, transparent 50%);
     width: calc(50% - 20px);
     border-radius: 20px;
-    transition-duration: 100ms;
+    box-shadow: 0 0 10px var(--sixth-color) inset;
+    transition-duration: 500ms;
 }
 .Services .container .layout .div:hover {
-    box-shadow: 0 0 15px tan inset;
+    background: linear-gradient(135deg, var(--third-color), transparent, var(--third-color));
+    box-shadow:  0 0 10px var(--sixth-color) inset,
+                        0 3px var(--sixth-color),
+                        0 6px var(--fifth-color),
+                        0 9px var(--fourth-color),
+                        0 12px var(--third-color),
+                        0 15px var(--second-color);
+    transition-duration: 150ms;
+    transform: translateY(-15px);
 }
 .Services .container .layout .div .icon {
     width: 50px;
@@ -480,41 +497,37 @@ section.Services {
 }
 .Services .container .layout .div .icon i {
     font-size: 50px;
-    color: #ffd7a2;
+    color: var(--fifth-color);
     transition-duration: 100ms;
-}
-.Services .container .layout .div:hover .icon i {
-    filter: drop-shadow(0 0 5px);
 }
 .Services .container .layout .div h2 {
     text-align: center;
-    color: tan;
+    color: var(--sixth-color);
+    filter: drop-shadow(0 0 5px);
     font-family: 'Patrick_Hand', sans-serif;
     font-size: 35px;
     font-weight: bolder;
     transition-duration: 100ms;
 }
-.Services .container .layout .div:hover h2 {
-    filter: drop-shadow(0 0 5px tan);
-}
 .Services .container .layout .div p {
-    color: white;
+    color: var(--sixth-color);
     padding-left: 50px;
+    font-weight: bold;
 }
 .Services .container .layout .div ul {
     padding-left: 80px;
-    color: white;
+    color: var(--sixth-color);
     list-style: square;
+    font-weight: bold;
 }
 
 section.Skills {
     padding-block: 50px;
-    background: linear-gradient(45deg, #011212, var(--main-color), #011212);
+    background: linear-gradient(45deg, var(--main-color));
     font-family: 'Oswald', sans-serif;
     color: white;
 }
 .Skills .container {
-    color: white;
     text-align: center;
 }
 .Skills .container .layout {
@@ -530,16 +543,16 @@ section.Skills {
     padding: 10px;
     padding-block: 40px;
     width: calc((100% / 3) - 15px);
-    background: linear-gradient(45deg, transparent, #005871a1, transparent);
-    border: 2px solid rgba(0, 255, 255, 0.05);
+    background: linear-gradient(45deg, var(--second-color), var(--third-color), var(--second-color));
+    border: 1px solid var(--fifth-color);
     border-radius: 15px;
-    box-shadow: 0 8px rgba(0, 255, 255, 0.15);
+    box-shadow: 0 8px var(--third-color);
     transition-duration: 100ms;
     overflow: hidden;
 }
 .Skills .container .layout .div:hover {
-    background: linear-gradient(135deg, transparent, #005871a1, transparent);
-    box-shadow: 0 8px rgba(0, 255, 255, 0.5);
+    background: linear-gradient(135deg, var(--fifth-color), var(--fourth-color), var(--fifth-color));
+    box-shadow: 0 8px var(--sixth-color);
 }
 .Skills .container .layout .div .circle i {
     font-size: 45px;
@@ -551,7 +564,7 @@ section.Skills {
     color: orange;
 }
 .Skills .container .layout .div:nth-child(2) .circle i {
-    color: blue;
+    color: rgb(149, 0, 255);
 }
 .Skills .container .layout .div:nth-child(3) .circle i {
     color: yellow;
@@ -563,22 +576,22 @@ section.Skills {
     color: white;
 }
 .Skills .container .layout .div:nth-child(6) .circle i {
-    color: #999;
+    color: #454545;
 }
 .Skills .container .layout .div:nth-child(7) .circle i {
-    color: #999;
+    color: #454545;
 }
 .Skills .container .layout .div:nth-child(8) .circle i {
     color: aqua;
 }
 .Skills .container .layout .div:nth-child(9) .circle i {
-    color: rgb(190, 0, 190);
+    color: #be00be;
 }
 .Skills .container .layout .div:nth-child(10) .circle i {
     color: white;
 }
 .Skills .container .layout .div p {
-    color: #ffd7a2;
+    color: var(--sixth-color);
     font-size: 18px;
     letter-spacing: 2px;
     transition-duration: 100ms;
@@ -587,7 +600,7 @@ section.Skills {
 .Skills .container .layout .div:hover .circle i,
 .Skills .container .layout .div:hover p {
     filter: drop-shadow(0 0 3px);
-    transform: scale(1.15);
+    transform: scale(1.25);
     transition-delay: 0s;
 }
 .Skills .container .layout .div .hidden {
@@ -596,7 +609,7 @@ section.Skills {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 255, 255, 0.05);
+    background-color: var(--fifth-color);
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: center;
@@ -649,8 +662,8 @@ section.Skills {
 .Skills .container .layout .div .hidden .percentage .solid-circle {
 width: 80%;
 height: 80%;
-background-color: rgb(0, 153, 255);
-box-shadow: 0 0 5px 2px white inset;
+background-color: var(--fifth-color);
+box-shadow: 0 0 5px 2px var(--main-color) inset;
 border-radius: 50%;
 position: relative;
 }
@@ -665,7 +678,7 @@ position: relative;
 }
 
 section.Projects {
-    background: linear-gradient(45deg, var(--main-color), #011212);
+    background: linear-gradient(180deg, var(--second-color), var(--main-color));
     color: white;
     padding-block: 35px;
 }
@@ -680,8 +693,8 @@ section.Projects {
 .Projects .container .layout .project {
     padding-block: 25px;
     width: 100%;
-    background: linear-gradient(135deg, transparent, #0058715a, transparent, #0058715a, transparent, #0058715a, transparent);
-    border: 5px double tan;
+    background-color: var(--third-color);
+    border: 5px double var(--sixth-color);
     border-radius: 25px;
     display: flex;
     flex-wrap: wrap;
@@ -701,7 +714,7 @@ section.Projects {
     min-width: 600px;
 }
 .Projects .container .layout .project .details h4 {
-    color: tan;
+    color: var(--sixth-color);
     letter-spacing: 2px;
     filter: drop-shadow(0 0 3px);
     text-align: center;
@@ -718,22 +731,27 @@ section.Projects {
     padding: 8px 15px;
     width: 75%;
     display: block;
-    background: linear-gradient(45deg, #16a2c9a1, transparent, #16a2c9a1);
-    color: #ffd7a2;
+    background: linear-gradient(45deg, var(--sixth-color), transparent, var(--sixth-color));
+    color: var(--sixth-color);
     border: 1px solid var(--border-color);
     border-radius: 8px;
     font-weight: bolder;
     text-align: center;
     text-decoration: none;
+    transition-duration: 200ms;
 }
 .Projects .container .layout .project .details a:hover {
-    background: linear-gradient(135deg, transparent, #16a2c9a1, transparent);
+    background: linear-gradient(135deg, transparent, var(--sixth-color), transparent);
+    color: var(--main-color);
+}
+.Projects .container .layout .project .details a:active {
+    scale: 0.9;
 }
 .Projects .container .layout .project .image {
     position: relative;
     width: 50%;
     height: 280px;
-    border: 2px solid #005871;
+    border: 2px solid var(--fourth-color);
     border-radius: 20px;
     overflow: hidden;
 }
@@ -753,9 +771,9 @@ section.Projects {
     transform: translate(-50%, -50%);
     width: 100px;
     height: 50px;
-    background-color: #ffd7a2;
-    color: #6e522d;
-    border: 5px dotted #6e522d;
+    background-color: var(--main-color);
+    color: var(--fifth-color);
+    border: 5px dotted var(--fifth-color);
     border-radius: 10px;
     font-family: 'Oswald', sans-serif;
     font-size: 25px;
@@ -776,26 +794,25 @@ section.Projects {
 
 
 section.ContactMe {
-    background-color: black;
-    border-bottom: 5px solid var(--text3-tan);
+    background: var(--sixth-color);
+    border-bottom: 5px solid var(--main-color);
 }
 .ContactMe .container {
     padding-block: 20px;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(135deg, #d2b48c33, #d2b48c33);
     max-width: 100%;
     height: 100%;
 }
 .ContactMe .container h1 {
-    color: var(--text3-tan);
+    color: var(--main-color);
     margin-bottom: 15px;
 }
 .ContactMe .container .layout {
     margin: auto;
     padding: 5px;
     width: 90%;
-    background-color: #C5A871;
+    background-color: var(--second-color);
     border-radius: 10px;
     display: flex;
     gap: 5px;
@@ -803,8 +820,9 @@ section.ContactMe {
 .ContactMe .container .layout .contact-info,
     .ContactMe .container .layout .form {
     padding: 15px;
-    background-color: #2A241C;
-    color: var(--text3-tan);
+    background-color: var(--sixth-color);
+    color: var(--second-color);
+    box-shadow: 0 0 5px 5px var(--second-color) inset;
     width: calc(50% - 2.5px);
     display: flex;
     flex-direction: column;
@@ -819,7 +837,9 @@ section.ContactMe {
     font-family: 'Patrick_Hand', sans-serif;
     font-weight: bolder;
     font-size: 30px;
-    filter: drop-shadow(0 0 3px);
+    color: var(--main-color);
+    filter: drop-shadow(0 0 1px);
+    letter-spacing: 2px;
 }
 .ContactMe .container .layout .contact-info > div .ul {
     padding: 0;
@@ -838,7 +858,7 @@ section.ContactMe {
     width: 165px;
 }
 .ContactMe .container .layout .contact-info > div .ul li a {
-    color: var(--text3-tan);
+    color: var(--second-color);
     text-decoration: none;
     font-family: 'Nunito', sans-serif;
     font-size: 16px;
@@ -867,7 +887,9 @@ section.ContactMe {
 .ContactMe .container .layout .form form label {
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
-    color: rgb(255, 216, 164);
+    letter-spacing: 2px;
+    color: var(--main-color);
+    filter: drop-shadow(0 0 1px);
 }
 .ContactMe .container .layout .form form input,
 .ContactMe .container .layout .form form textarea {
@@ -876,12 +898,12 @@ section.ContactMe {
     padding: 8px;
     width: 100%;
     height: 30px;
-    background: linear-gradient(45deg, transparent, rgba(210, 180, 140, 0.323), transparent);
+    background: linear-gradient(45deg, var(--third-color), var(--main-color), var(--third-color));
     color: white;
-    border: 1px solid var(--text3-tan);
+    border: 2px solid var(--fourth-color);
     border-radius: 10px;
     transition-duration: 200ms;
-    outline-color: var(--text3-tan);
+    outline-color: var(--third-color);
 }
 .ContactMe .container .layout .form form textarea {
     height: 82px;
@@ -890,7 +912,7 @@ section.ContactMe {
 .ContactMe .container .layout .form form input:focus,
 .ContactMe .container .layout .form form textarea:focus {
     background: black;
-    outline: 2px solid var(--text3-tan);
+    outline: none;
     box-shadow: 0 0 0 6px #d2b48c80;
 }
 .ContactMe .container .layout .form form button {
@@ -898,16 +920,16 @@ section.ContactMe {
     margin-top: 10px;
     padding: 8px 10px;
     width: 150px;
-    background: linear-gradient(45deg, transparent, var(--text3-tan), transparent);
-    color: #433A2D;
-    border: 1px solid var(--text3-tan);
+    background: linear-gradient(45deg, transparent, var(--second-color), transparent);
+    color: var(--sixth-color);
+    border: 1px solid var(--second-color);
     border-radius: 10px;
     font-weight: bolder;
     transition-duration: 200ms;
 }
 .ContactMe .container .layout .form form button:hover {
-    background: linear-gradient(45deg, var(--text3-tan), transparent, var(--text3-tan));
-    color: var(--text3-tan);
+    background: linear-gradient(135deg, var(--second-color), transparent, var(--second-color));
+    color: var(--second-color);
 }
 .ContactMe .container .layout .form form button:active {
     transform: scale(90%);
@@ -915,7 +937,7 @@ section.ContactMe {
 
 footer {
     height: 150px;
-    background-color: color-mix(in srgb, var(--text3-tan) 15%, black 100%);
+    background-color: color-mix(in srgb, var(--second-color) 100%, black 0%);
 }
 footer .container {
     width: 100%;
@@ -939,14 +961,13 @@ footer .container .div1 .image {
 }
 footer .container .div1 .image img {
     width: 100%;
-    border: 3px solid var(--text3-tan);
+    border: 3px solid var(--fifth-color);
     border-radius: 50%;
-    filter: drop-shadow(0 0 5px var(--text3-tan));
 }
 footer .container .div1 hr {
     width: 5px;
     height: 100%;
-    background: linear-gradient(var(--text3-tan) 50%, transparent);
+    background: linear-gradient(var(--sixth-color) 50%, transparent);
 }
 footer .container .div1 .ul ul {
     padding: 0;
@@ -956,20 +977,21 @@ footer .container .div1 .ul ul {
 }
 footer .container .div1 .ul ul li a {
     font-family: 'Exo 2', sans-serif;
+    font-weight: bolder;
     text-decoration: none;
-    color: var(--text3-tan);
+    color: var(--fifth-color);
     filter: drop-shadow(0 0 5px);
     transition-duration: 100ms;
 }
 footer .container .div1 .ul ul li a:hover {
-    color: white;
+    color: var(--sixth-color);
 }
 footer .container .div1 .ul p {
     font-family: 'Exo 2', sans-serif;
-    color: var(--text3-tan);
+    color: var(--sixth-color);
     font-size: 25px;
     font-weight: bolder;
-    filter: drop-shadow(0 0 5px var(--text3-tan));
+    filter: drop-shadow(0 0 5px var(--sixth-color));
 }
 footer .container .div2 {
     display: flex;
@@ -986,13 +1008,12 @@ footer .container .div2 ul {
 footer .container .div2 ul li a i {
     width: fit-content;
     font-size: 35px;
-    color: var(--text3-tan);
+    color: var(--sixth-color);
     transition-duration: 100ms;
     filter: drop-shadow(0 0 2px);
 }
 footer .container .div2 ul li a i:hover {
-    color: #af926b;
-    color: white;
+    color: var(--fifth-color);
 }
 footer .container .div2 > a {
     font-family: 'Exo 2', sans-serif;
@@ -1003,6 +1024,5 @@ footer .container .div2 > a {
     text-decoration: none;
 }
 footer .container .div2 > a:hover {
-    color: #af926b;
-    color: white;
+    color: var(--fifth-color);
 }
