@@ -8,8 +8,14 @@
     .loading .container  .job {
         font-size: 18px;
     }
+    header nav {
+        height: 65px;
+    }
     header nav .container {
         width: 75%;
+    }
+    header nav .container .image {
+        width: 55px;
     }
     header nav .container .ul {
     display: none;
@@ -17,17 +23,57 @@
     header nav .container .responsive {
         display: flex;
     }
+    .AboutMe .container {
+        padding: 0;
+        flex-direction: column;
+    }
+    .AboutMe .container .picture .frame {
+        width: 300px;
+        height: 360px;
+    }
+    .AboutMe .container .details {
+        width: 420px !important;
+    }
+    .AboutMe .container .details div > ul li p.email {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .AboutMe .container .details div > ul li p.email a {
+        width: fit-content;
+    }
     .Skills .container .layout .div {
         width: calc(100% - 75px);
         padding-block: 55px;
     }
-    Projects .container {
-        max-width: 90%;
+    .Projects {
+        padding: 0 !important;
+        padding-block: 0px;
+        margin: 0;
+        max-width: 100%;
+    }
+    .Projects .container {
+        padding: 0;
+        max-width: 100%;
+    }
+    .Projects .container h1 {
+        padding-top: 50px;
+        padding-bottom: 35px;
+    }
+    .Projects .container .layout {
+        padding: 20px;
+        padding-top: 30px;
+    }
+    .Projects .container .layout .project {
+        margin-bottom: 35px;
+        transform: scale(1);
     }
     .Projects .container .layout .project .image {
-        min-width: 90%;
-        height: 18%;
-        object-fit: cover;
+        margin: auto;
+        width: 325px;
+        aspect-ratio: 2/1;
+        padding: 20px;
+        background-color: red;
     }
     .ContactMe .container .layout .contact-info > div .ul li a {
         font-size: 12px !important;
@@ -54,8 +100,14 @@
     .loading .container  .job {
         font-size: 25px;
     }
+    header nav {
+        height: 65px;
+    }
+    header nav .container .image {
+        width: 55px;
+    }
     header nav .container {
-        width: 75%;
+        width: 85%;
     }
     header nav .container .ul {
     display: none;
@@ -67,11 +119,23 @@
         font-size: 45px;
     }
     .AboutMe .container {
-        padding-top: 50px;
+        padding: 0;
         flex-direction: column;
+    }
+    .AboutMe .container .picture .frame {
+        width: 300px;
+        height: 360px;
     }
     .AboutMe .container .details {
         width: 420px !important;
+    }
+    .AboutMe .container .details div > ul li p.email {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .AboutMe .container .details div > ul li p.email a {
+        width: fit-content;
     }
     .Services .container .layout .div ul {
         padding-left: 25px;
@@ -137,13 +201,30 @@
         width: calc((100% / 2) - 15px);
         padding-block: 55px;
     }
+    .Projects {
+        padding: 0 !important;
+        padding-block: 0px;
+        margin: 0;
+        max-width: 100%;
+    }
     .Projects .container {
-        max-width: 90%;
+        padding: 0;
+        max-width: 100%;
+    }
+    .Projects .container h1 {
+        padding-top: 50px;
+        padding-bottom: 35px;
+    }
+    .Projects .container .layout {
+        padding: 20px;
+        padding-top: 30px;
+    }
+    .Projects .container .layout .project {
+        margin-bottom: 35px;
+        transform: scale(1);
     }
     .Projects .container .layout .project .image {
-        min-width: 400px;
-        height: 200px;
-        object-fit: cover;
+        aspect-ratio: 2/1;
     }
     footer {
         padding-block: 30px;
@@ -224,9 +305,6 @@
     .Projects .container .layout .project {
         padding-block: 30px;
     }
-    .Projects .container .layout .project .image {
-        margin: 0;
-    }
     .ContactMe .container .layout .contact-info > div .ul li a {
         font-size: 14px;
     }
@@ -245,6 +323,31 @@
 }
 }
 @media screen and (max-width: 485px) {
+    .Projects {
+        padding: 0 !important;
+        padding-block: 0px;
+        margin: 0;
+        max-width: 100%;
+    }
+    .Projects .container {
+        padding: 0;
+        max-width: 100%;
+    }
+    .Projects .container h1 {
+        padding-top: 50px;
+        padding-bottom: 35px;
+    }
+    .Projects .container .layout {
+        padding: 20px;
+        padding-top: 30px;
+    }
+    .Projects .container .layout .project {
+        margin-bottom: 35px;
+        transform: scale(1);
+    }
+    .Projects .container .layout .project .image {
+        aspect-ratio: 2/1;
+    }
     .Projects .container .layout .project .details h4 {
         font-size: 26px;
     }
