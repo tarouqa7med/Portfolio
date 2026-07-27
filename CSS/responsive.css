@@ -1,1 +1,307 @@
 
+@media screen and (max-width: 371px) {
+    .loading .container .name {
+        font-size: 30px !important;
+        transform: scaleY(1.75) !important;
+        letter-spacing: 2px;
+    }
+    .loading .container  .job {
+        font-size: 18px;
+    }
+    header nav .container {
+        width: 75%;
+    }
+    header nav .container .ul {
+    display: none;
+    }
+    header nav .container .responsive {
+        display: flex;
+    }
+    .Skills .container .layout .div {
+        width: calc(100% - 75px);
+        padding-block: 55px;
+    }
+    Projects .container {
+        max-width: 90%;
+    }
+    .Projects .container .layout .project .image {
+        min-width: 90%;
+        height: 18%;
+        object-fit: cover;
+    }
+    .ContactMe .container .layout .contact-info > div .ul li a {
+        font-size: 12px !important;
+    }
+    footer {
+        padding-block: 30px;
+        height: auto;
+    }
+    footer .container {
+        justify-content: center;
+        min-width: 100%;
+        flex-wrap: wrap;
+        transform: scale(0.85);
+    }
+}
+@media screen and (min-width: 371px) and (max-width: 575.98px) {
+    /* 450px */
+
+    .loading .container .name {
+        letter-spacing: 0;
+        font-size: 36px !important;
+        transform: scaleY(1.75) !important;
+    }
+    .loading .container  .job {
+        font-size: 25px;
+    }
+    header nav .container {
+        width: 75%;
+    }
+    header nav .container .ul {
+    display: none;
+    }
+    header nav .container .responsive {
+        display: flex;
+    }
+    header .container.parent .welcome h1 {
+        font-size: 45px;
+    }
+    .AboutMe .container {
+        padding-top: 50px;
+        flex-direction: column;
+    }
+    .AboutMe .container .details {
+        width: 420px !important;
+    }
+    .Services .container .layout .div ul {
+        padding-left: 25px;
+    }
+    .Skills .container .layout .div {
+        width: calc(100% - 75px);
+        padding-block: 55px;
+    }
+    .Projects .container {
+        max-width: 90%;
+    }
+    .Projects .container .layout .project {
+        margin: -50px;
+        padding-block: 20px;
+        height: max-content;
+        transform: scale(0.85);
+    }
+    .Projects .container .layout .project .image {
+        min-width: 87%;
+        height: 20%;
+        object-fit: cover;
+    }
+    footer {
+        padding-block: 30px;
+        height: auto;
+    }
+    footer .container {
+        justify-content: center;
+        min-width: 100%;
+        flex-wrap: wrap;
+        transform: scale(0.85);
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
+    /* 650px */
+
+    .loading .container .name {
+        letter-spacing: 5px;
+        font-size: 50px;
+        transform: scaleY(1.25);
+    }
+    .loading .container  .job {
+        font-size: 35px;
+    }
+    header nav .container .ul {
+    display: none;
+    }
+    header nav .container .responsive {
+        display: flex;
+    }
+    header .container.parent .welcome h1 {
+        font-size: 55px;
+    }
+    .AboutMe .container {
+        padding-top: 50px;
+        flex-direction: column;
+    }
+    .AboutMe .container .details {
+        padding: 0;
+        width: 450px;
+    }
+    .Skills .container .layout .div {
+        width: calc((100% / 2) - 15px);
+        padding-block: 55px;
+    }
+    .Projects .container {
+        max-width: 90%;
+    }
+    .Projects .container .layout .project .image {
+        min-width: 400px;
+        height: 200px;
+        object-fit: cover;
+    }
+    footer {
+        padding-block: 30px;
+        height: auto;
+    }
+    footer .container {
+        justify-content: center;
+        min-width: 100%;
+        flex-wrap: wrap;
+        transform: scale(0.95);
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+    /* 850px */
+
+    .loading .container .name {
+        letter-spacing: 5px;
+        font-size: 70px;
+        transform: scaleY(1.1);
+    }
+    .AboutMe .container {
+        padding-top: 50px;
+        flex-direction: column;
+    }
+    .AboutMe .container .picture {
+        margin-bottom: 50px;
+        width: 400px !important;
+        height: 450px !important;
+    }
+    .AboutMe .container .picture .frame {
+        width: 400px !important;
+        height: 450px !important;
+    }
+    .AboutMe .container .details {
+        width: 480px;
+    }
+    .Services .container {
+        max-width: 90%;
+    }
+    .Skills .container .layout .div {
+        width: calc((100% / 2) - 15px);
+        padding-block: 55px;
+    }
+    footer {
+        padding-block: 30px;
+        height: auto;
+    }
+    footer .container {
+        justify-content: center;
+        min-width: 100%;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1180px) {
+    /* 1050px */
+
+    .loading .container .name {
+        letter-spacing: 10px;
+    }
+    .Projects .container {
+        max-width: 90% !important;
+    }
+    .Projects .container .layout .project {
+        max-width: 100% !important;
+    }
+}
+@media screen and (min-width: 1180px) and (max-width: 1300px) {
+    /* 1200px */
+    
+    .loading .container .name {
+        letter-spacing: 10px;
+    }
+    .Projects .container {
+        max-width: 90% !important;
+    }
+}
+@media screen and (max-width: 410px) {
+    .Projects .container .layout .project {
+        padding-block: 30px;
+    }
+    .Projects .container .layout .project .image {
+        margin: 0;
+    }
+    .ContactMe .container .layout .contact-info > div .ul li a {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 460px) {
+    .AboutMe .container {
+        padding-top: 50px;
+        flex-direction: column;
+    }
+    .AboutMe .container .details {
+        max-width: 350px;
+        height: 750px !important;
+    }
+    .ContactMe .container .layout .form form{
+        padding: 5px;
+}
+}
+@media screen and (max-width: 485px) {
+    .Projects .container .layout .project .details h4 {
+        font-size: 26px;
+    }
+}
+@media screen and (max-width: 550px) {
+    footer .container .div1 .ul ul {
+        flex-direction: column;
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 850px) {
+
+    .Services .container .layout {
+        flex-direction: column;
+    }
+    .Services .container .layout .div {
+        width: 80%;
+    }
+    .ContactMe .container .layout {
+        display: flex;
+        flex-direction: column;
+    }
+    .ContactMe .container .layout .contact-info,
+    .ContactMe .container .layout .form {
+        width: 100%;
+    }
+    .ContactMe .container .layout .contact-info {
+        border-radius: 8px 8px 0 0;
+    }
+    .ContactMe .container .layout .form {
+        border-radius: 0 0 8px 8px;
+    }
+}
+@media screen and (max-width: 940px) {
+    .ContactMe .container .layout .form form input,
+    .ContactMe .container .layout .form form textarea {
+        height: 50px;
+    }
+    .ContactMe .container .layout .form form textarea {
+        height: 150px;
+    }
+}
+@media screen and (max-width: 1200px) {
+
+    .AboutMe .container .details {
+        height: 630px;
+    }
+    .AboutMe .container .details div > ul ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .AboutMe .container .details div > ul li p a.projects-link {
+        display: block;
+        width: fit-content;
+        margin-top:  10px;
+    }
+}
+@media screen and (min-width: 1300px) {
+
+}

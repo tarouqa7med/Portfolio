@@ -6,9 +6,12 @@
 }
 :root {
     --main-color: #00252f;
+    --main2-color: #ffeed7;
     --text-color: #00c1f6;
+    --text2-drop-shadow: #89704f;
+    --text3-tan: #fcd6a4;
     --border-color: tan;
-    --text-drop-shadow: rgb(184, 153, 113);
+    --text-drop-shadow: #b89971;
 }
 html {
     background-color: var(--main-color);
