@@ -49,6 +49,7 @@
     width: 200px;
     height: 200px;
     background: #ffffff60;
+    background: blue;
     border: 2px solid var(--fourth-color);
     border-radius: 50%;
     display: flex;
@@ -60,6 +61,7 @@
     width: 185px;
     height: 185px;
     backgroung-color: var(--main-color);
+background: green;
 }
 .loading .container .loading-percentage .loader div img {
     border: 2px solid var(--fifth-color);
