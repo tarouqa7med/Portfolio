@@ -636,7 +636,7 @@ section.Skills {
     background: conic-gradient(#ff006f 0% 25%, #ffffff60 25% 100%);
 }
 .Skills .container .layout .div:nth-child(6) .hidden .percentage {
-    background: conic-gradient(#ff006f 0% 0%, #ffffff60 0% 100%);
+    background: conic-gradient(#ff006f 0% 25%, #ffffff60 25% 100%);
 }
 .Skills .container .layout .div .hidden .percentage .solid-circle {
 width: 80%;
