@@ -573,10 +573,10 @@ section.Skills {
     color: yellow;
 }
 .Skills .container .layout .div:nth-child(4) .circle i {
-    color: #454545;
+    color: aqua;
 }
 .Skills .container .layout .div:nth-child(5) .circle i {
-    color: white;
+    color: #454545;
 }
 .Skills .container .layout .div:nth-child(6) .circle i {
     color: #be00be;
