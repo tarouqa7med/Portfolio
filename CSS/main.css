@@ -706,7 +706,6 @@ section.Projects {
     display: block;
     background: linear-gradient(45deg, var(--sixth-color), transparent, var(--sixth-color));
     color: var(--sixth-color);
-    border: 1px solid var(--border-color);
     border-radius: 8px;
     font-weight: bolder;
     text-align: center;
@@ -820,7 +819,7 @@ section.ContactMe {
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
-    gap: 25px;
+    gap: 15px;
 }
 .ContactMe .container .layout .contact-info > div .ul li {
     display: flex;
