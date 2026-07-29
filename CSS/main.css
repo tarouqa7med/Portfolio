@@ -572,27 +572,15 @@ section.Skills {
 .Skills .container .layout .div:nth-child(3) .circle i {
     color: yellow;
 }
-/* .Skills .container .layout .div:nth-child(4) .circle i {
-    color: skyblue;
-}
-.Skills .container .layout .div:nth-child(5) .circle i {
-    color: white;
-} */
 .Skills .container .layout .div:nth-child(4) .circle i {
     color: #454545;
 }
-/* .Skills .container .layout .div:nth-child(7) .circle i {
-    color: #454545;
-}
-.Skills .container .layout .div:nth-child(8) .circle i {
-    color: aqua;
-} */
 .Skills .container .layout .div:nth-child(5) .circle i {
+    color: white;
+}
+.Skills .container .layout .div:nth-child(6) .circle i {
     color: #be00be;
 }
-/* .Skills .container .layout .div:nth-child(10) .circle i {
-    color: white;
-} */
 .Skills .container .layout .div p {
     color: var(--sixth-color);
     font-size: 18px;
@@ -642,26 +630,14 @@ section.Skills {
     background: conic-gradient(#ff006f 0% 20%, #ffffff60 20% 100%);
 }
 .Skills .container .layout .div:nth-child(4) .hidden .percentage {
-    background: conic-gradient(#ff006f 0% 65%, #ffffff60 65% 100%);
+    background: conic-gradient(#ff006f 0% 0%, #ffffff60 0% 100%);
 }
 .Skills .container .layout .div:nth-child(5) .hidden .percentage {
     background: conic-gradient(#ff006f 0% 25%, #ffffff60 25% 100%);
 }
-/* .Skills .container .layout .div:nth-child(6) .hidden .percentage {
-    background: conic-gradient(#ff006f 0% 65%, #ffffff60 65% 100%);
-}
-.Skills .container .layout .div:nth-child(7) .hidden .percentage {
+.Skills .container .layout .div:nth-child(6) .hidden .percentage {
     background: conic-gradient(#ff006f 0% 0%, #ffffff60 0% 100%);
 }
-.Skills .container .layout .div:nth-child(8) .hidden .percentage {
-    background: conic-gradient(#ff006f 0% 0%, #ffffff60 0% 100%);
-}
-.Skills .container .layout .div:nth-child(9) .hidden .percentage {
-    background: conic-gradient(#ff006f 0% 25%, #ffffff60 25% 100%);
-}
-.Skills .container .layout .div:nth-child(10) .hidden .percentage {
-    background: conic-gradient(#ff006f 0% 0%, #ffffff60 0% 100%);
-} */
 .Skills .container .layout .div .hidden .percentage .solid-circle {
 width: 80%;
 height: 80%;
