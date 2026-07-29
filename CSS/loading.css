@@ -59,7 +59,7 @@
 }
 .loading .container .loading-percentage .loader div {
     width: 185px;
-    height: 185px;
+    height: 175px;
     backgroung-color: var(--main-color);
 background: green;
     
