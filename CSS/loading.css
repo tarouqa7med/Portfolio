@@ -58,8 +58,8 @@
     animation: percentage 2s linear 1s 1 normal forwards;
 }
 .loading .container .loading-percentage .loader div {
-    width: 185px;
-    height: 175px;
+    width: 90%;
+    height: 90%;
     backgroung-color: var(--main-color);
 background: green;
     border-radius: 50%;
