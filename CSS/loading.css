@@ -41,7 +41,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: red;
 }
 .loading .container .loading-percentage .loader {
     margin-bottom: 20px;
@@ -49,7 +48,6 @@
     width: 200px;
     height: 200px;
     background: #ffffff60;
-    background: blue;
     border: 2px solid var(--fourth-color);
     border-radius: 50%;
     display: flex;
@@ -58,10 +56,9 @@
     animation: percentage 2s linear 1s 1 normal forwards;
 }
 .loading .container .loading-percentage .loader div {
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
     backgroung-color: var(--main-color);
-background: green;
     border-radius: 50%;
 }
 .loading .container .loading-percentage .loader div img {
