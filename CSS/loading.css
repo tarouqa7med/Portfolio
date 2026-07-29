@@ -58,7 +58,7 @@
 .loading .container .loading-percentage .loader div {
     width: 100%;
     height: 100%;
-    backgroung-color: var(--fourth-color);
+    backgroung-color: var(--main-color);
 }
 .loading .container .loading-percentage .loader div img {
     border: 2px solid var(--fifth-color);
