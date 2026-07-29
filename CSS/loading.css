@@ -62,7 +62,7 @@
     height: 175px;
     backgroung-color: var(--main-color);
 background: green;
-    
+    border-radius: 50%;
 }
 .loading .container .loading-percentage .loader div img {
     border: 2px solid var(--fifth-color);
